@@ -1,0 +1,81 @@
+.header {
+  background: url('../img/header/header-bg.jpg') top / cover no-repeat;
+  background-position: 0px;
+  min-height: 682px;
+
+  &-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-logo {
+    margin-top: 42px;
+    margin-left: 6px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    min-width: 397px;
+    margin-right: 90px;
+
+    &-link {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: $grey;
+    }
+  }
+
+  &-search {
+    font-size: 20px;
+    margin-top: 42px;
+    margin-right: 12px;
+  }
+
+  &-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__caption {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      font-weight: 700;
+      color: white;
+      margin-top: 115px;
+      margin-left: 78px;
+    }
+
+    &__title {
+      text-align: center;
+      text-transform: capitalize;
+      font-size: 58px;
+      line-height: 80px;
+      letter-spacing: 0.2px;
+      font-weight: 500;
+      color: white;
+      margin-top: 15px;
+      margin-left: 76px;
+      max-width: 410px;
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 24px;
+      line-height: 40px;
+      letter-spacing: 0.2px;
+      font-weight: 500;
+      color: white;
+      margin-top: 10px;
+      margin-left: 76px;
+    }
+
+  }
+}
