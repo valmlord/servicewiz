@@ -1,0 +1,53 @@
+.stories {
+  padding-bottom: 115px;
+
+  &-card {
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+
+    &__img {
+      width: 605px;
+      height: 477px;
+      margin-left: -10px;
+    }
+
+    &__description {
+      margin-left: 47px;
+    }
+
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 32px;
+      letter-spacing: 0.1px;
+      color: $text-color;
+      margin-top: 59px;
+    }
+
+    &__info {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0.2px;
+      color: $second-text-color;
+      padding-top: 23px;
+      width: 346px;
+    }
+
+    &__author {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      text-align: right;
+      padding-top: 28px;
+      color: $second-text-color;
+    }
+  }
+
+  .slick-initialized .slick-slide {
+    display: flex;
+  }
+}

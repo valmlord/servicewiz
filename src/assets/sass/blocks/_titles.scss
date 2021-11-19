@@ -6,8 +6,22 @@
   letter-spacing: 0.2px;
   text-align: center;
   color: $text-color;
-  padding-top: 99px;
-  padding-left: 11px;
+
+  &-analyst {
+    padding-top: 99px;
+    padding-left: 11px;
+  }
+
+  &-stories {
+    padding-top: 9px;
+    padding-left: 7px;
+  }
+
+  &-difference {
+    color: white;
+    padding-top: 88px;
+    padding-left: 16px;
+  }
 }
 
 .subtitle {
@@ -19,4 +33,17 @@
   color: $second-text-color;
   margin-top: 15px;
   margin-left: 12px;
+}
+
+.caption {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $alert-color;
+  padding-top: 76px;
+  padding-left: 12px;
 }

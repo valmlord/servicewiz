@@ -1,0 +1,63 @@
+.difference {
+  background: url('../img/difference/background.jpg') top / cover no-repeat;
+  background-position: 0px;
+  border-top-left-radius: 386px;
+  border: none;
+  height: 808px;
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 430px;
+    padding-top: 71px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 95px;
+
+    &__icon {
+      &--1 {
+        font-size: 86px;
+        line-height: 0.8px;
+      }
+
+      &--2 {
+        font-size: 68px;
+      }
+
+      &--3 {
+        font-size: 84px;
+        left: -29px;
+        line-height: 1;
+      }
+
+      &--4 {
+        font-size: 86px;
+        top: -8px;
+        left: -20px;
+        line-height: 0.8;
+      }
+    }
+
+    &__count {
+      font-size: 58px;
+      font-weight: 500;
+      line-height: 80px;
+      letter-spacing: 0.2px;
+    }
+
+    &__info {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+    }
+  }
+}
