@@ -16303,13 +16303,20 @@ __webpack_require__.r(__webpack_exports__);
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(".stories-slider").slick({
   arrows: true,
+  prevArrow: '<button type="button" class="prev-slide"><span class="icon-prev"></span></button>',
+  nextArrow: '<button type="button" class="next-slide"><span class="icon-next"></span></button>',
   dots: false,
   autoplay: false,
   rows: 0,
   slidesToShow: 1,
-  infinite: false,
-  prevArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()(".stories-slider__nav-left"),
-  nextArrow: jquery__WEBPACK_IMPORTED_MODULE_0___default()(".stories-slider__nav-right")
+  infinite: false
+});
+var $status = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".stories-counter");
+var $slickElement = jquery__WEBPACK_IMPORTED_MODULE_0___default()(".stories-slider");
+$slickElement.on("init reInit afterChange", function (event, slick, currentSlide, nextSlide) {
+  //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+  var i = (currentSlide ? currentSlide : 0) + 1;
+  $status.text(i + " " + "/" + " " + slick.slideCount);
 });
 
 /***/ }),
